@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Cairo', sans-serif;
+    background: url('https://cdn.pixabay.com/photo/2024/01/20/07/05/ai-generated-8520470_960_720.png') no-repeat center center fixed;
+    background-size: cover;
+
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.65);
+    min-height: 92vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+
+.container {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 30px 40px;
+    border-radius: 20px;
+    text-align: center;
+    backdrop-filter: blur(3px);
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.1);
+    color: #fff;
+    width: 90%;
+    max-width: 600px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #f1c40f;
+}
+
+
+.countdown-box {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.time-box {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 20px;
+    margin: 10px;
+    min-width: 80px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.time-box:hover {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.time-box span {
+    display: block;
+    font-size: 28px;
+    font-weight: bold;
+    color: #00ffcc;
+}
+
+.time-box small {
+    font-size: 14px;
+    color: #fff;
+}
+
+
+#currentTime {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #f8f8f8;
+}
+
+
+
+
+.celebrate {
+    font-size: 3rem;
+    color: #f1c40f;
+    text-shadow:
+        0 0 10px #f1c40f,
+        0 0 20px #f1c40f,
+        0 0 30px #f39c12,
+        0 0 40px #f39c12,
+        0 0 50px #f39c12;
+    animation: pulseGlow 2s infinite alternate;
+}
+
+@keyframes pulseGlow {
+    0% {
+        text-shadow:
+            0 0 10px #f1c40f,
+            0 0 20px #f1c40f,
+            0 0 30px #f39c12,
+            0 0 40px #f39c12,
+            0 0 50px #f39c12;
+    }
+
+    100% {
+        text-shadow:
+            0 0 20px #f39c12,
+            0 0 30px #f39c12,
+            0 0 40px #f1c40f,
+            0 0 50px #f1c40f,
+            0 0 60px #f39c12;
+    }
+}

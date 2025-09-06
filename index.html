@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🕌 Document</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="overlay">
+        <div class="container" data-aos="zoom-in">
+            <h1 data-aos="fade-down">🕌 Ramadan Countdown</h1>
+            <div id="countdown" class="countdown-box" data-aos="fade-up">
+                <div class="time-box"><span id="months">0</span><small>Months</small></div>
+                <div class="time-box"><span id="days">0</span><small>Days</small></div>
+                <div class="time-box"><span id="hours">0</span><small>Hours</small></div>
+                <div class="time-box"><span id="minutes">0</span><small>Minutes</small></div>
+                <div class="time-box"><span id="seconds">0</span><small>Seconds</small></div>
+            </div>
+            <p id="currentTime" data-aos="fade-up"></p>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>AOS.init();</script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
